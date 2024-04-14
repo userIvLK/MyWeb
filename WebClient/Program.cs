@@ -17,7 +17,9 @@ namespace MyWeb
                     OrderItem o1 = new() { Id = Guid.NewGuid(), Price = 90, Quantity = 1, Name = "A" };
                     OrderItem o2 = new() { Id = Guid.NewGuid(), Price = 10, Quantity = 1, Name = "B" };
                     OrderItem o3 = new() { Id = Guid.NewGuid(), Price = 20, Quantity = 1, Name = "c" };
-                     using HttpResponseMessage response = await httpClient.PostAsJsonAsync(httpClient.BaseAddress.AbsoluteUri, MyOrder);
+                    List<OrderItem> orderList = new() { o1, o2, o3 };
+                    Order myOrder = new() { Id = Guid.NewGuid(), Customer = "Ivan", Items = orderList, OrderDate = DateTime.Now};
+                    using HttpResponseMessage response = await httpClient.PostAsJsonAsync(httpClient.BaseAddress.AbsoluteUri, myOrder);
                     var result = await response.Content.ReadAsStringAsync();
                     Console.WriteLine(result);
 
