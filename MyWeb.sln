@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeb", "MyWeb\MyWeb.csproj", "{97CD71D9-1C28-4E27-A55A-29304EE0771D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWeb", "MyWeb\MyWeb.csproj", "{97CD71D9-1C28-4E27-A55A-29304EE0771D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "WebClient\WebClient.csproj", "{55A356C4-B189-4220-BE51-22DB3C95F4C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{97CD71D9-1C28-4E27-A55A-29304EE0771D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97CD71D9-1C28-4E27-A55A-29304EE0771D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97CD71D9-1C28-4E27-A55A-29304EE0771D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55A356C4-B189-4220-BE51-22DB3C95F4C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A356C4-B189-4220-BE51-22DB3C95F4C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A356C4-B189-4220-BE51-22DB3C95F4C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A356C4-B189-4220-BE51-22DB3C95F4C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
