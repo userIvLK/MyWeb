@@ -1,9 +1,10 @@
+USE MyWebDB;
 DECLARE @i INT
 SET @i = 10;
 
 WHILE @i > 0
 	BEGIN
-		USE MyWebDB;
+		
 		DECLARE @j INT
 		SET @j = 10;
 		DECLARE @name varchar(30)
